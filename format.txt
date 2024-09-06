@@ -1,0 +1,26 @@
+ITEMS;
+{
+  "name": "Mango Juise",
+  "price": 4.99,
+  "taste": "Sweet",
+  "is_drink": true,
+  "ingredients": [
+    "mango",
+    "yogurt",
+    "honey"
+  ],
+  "num_sales": 45
+}
+
+PERSON;
+{
+"name": "Alice",
+"age": 28,
+"work": "Chef",
+"mobile": "90683-36703",
+"email": "alice@gmail.com",
+"address": "Ahmed nager",
+"salary": 6000
+}
+
+
