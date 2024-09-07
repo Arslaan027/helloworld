@@ -9,7 +9,7 @@ passport.use(
       if (!user) {
         done(null, false, { message: "Incorrect username" });
       }
-      const isPasswordMatch = user.password === password ? true : false;
+      const isPasswordMatch = user.comparePassword(password);
       if (isPasswordMatch) {
         done(null, user);
       } else {

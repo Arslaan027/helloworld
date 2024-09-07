@@ -30,8 +30,8 @@ const personRoute = require("./Routes/PersonRoute");
 const MenuItems = require("./Routes/ItemRoute");
 
 //===> Routers in Action
-app.use("/person", personRoute);
-app.use("/item", localAuthMiddleware, MenuItems);
+app.use("/person", localAuthMiddleware, personRoute);
+app.use("/item", MenuItems);
 
 //===> Listening port and running
 app.listen(port, () => {
